@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato|Roboto');
 
 @font-face {
-    font-family: 'Interstate';
-    src: url('_images/interstate-black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Interstate';
+  src: url('_images/interstate-black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 body {
   background-color: white;
 }
 
- #preso,
-.slide {
-    width: 1440px !important;
-    height: 900px !important; 
+#preso, .slide {
+  width: 1440px !important;
+  height: 900px !important;
 }
+
 .content {
   color: #959B99;
   font-family: 'Lato', sans-serif;
@@ -26,6 +25,10 @@ body {
 
 .title {
   background-color: #1392FE;
+}
+
+.white {
+  background-color: #ffffff;
 }
 
 .title h1 {
@@ -47,7 +50,7 @@ body {
 }
 
 .subsection h1 {
-  color: white ;
+  color: white;
   font-size: 90px;
   font-variant: normal;
 }
@@ -57,7 +60,7 @@ body {
 }
 
 .black h1 {
-  color: #1392FE ;
+  color: #1392FE;
   font-size: 90px;
   font-variant: normal;
 }
@@ -95,13 +98,25 @@ body {
 }
 
 .grey h1 {
-  color: white ;
+  color: white;
   font-size: 90px;
   font-variant: normal;
 }
 
+/* #notes code, #notes pre {
+  font-size: 14px;
+} */
+
+div#notes h1 {
+  font-size: 28px;
+}
+
+/* #notes p {
+  font-size: 16px;
+} */
+
 h1 {
-  color: #1392FE ;
+  color: #1392FE;
   font-family: 'Interstate';
   font-size: 55px;
   padding-left: 40px;
@@ -110,13 +125,29 @@ h1 {
 }
 
 h2 {
-  color: #F37F0A ;
+  color: #F37F0A;
   font-family: 'Interstate';
-  font-size: 45px;
+  font-size: 36px;
   font-weight: 900;
   border-bottom: none;
   padding-left: 60px;
   padding-top: 20px;
+}
+
+pre.highlight {
+  word-wrap: break-word;
+}
+
+pre.highlight code.language-powershellconsole, pre.highlight code.powershellconsole,
+pre.highlight code.language-console, pre.highlight code.console {
+  word-wrap: break-word;
+  font-size: 28px;
+} 
+
+pre {
+  margin: 1em 0px;
+  padding: .25em;
+  white-space: pre-wrap;
 }
 
 code {
@@ -125,7 +156,7 @@ code {
   border-spacing: 2px, 2px, 2px, 2px;
   padding-bottom: 2px;
   font-family: 'Inconsolata', monaco, monospace;
-  font-size: 35px;
+  /* font-size: 28px; */
   color: #595959;
   font-style: normal;
   background: #fcfcfc;
@@ -135,19 +166,63 @@ code {
   border-bottom: 0px solid #222;
 }
 
-.psadminlogo {
+.psadminlogo::after {
   padding-top: 5%;
   padding-bottom: 10%;
+}
+
+.podcastlogo::after {
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 .subsection a {
   color: white;
 }
 
+/* .floatingNotes h1, #notes h1 {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.floatingNotes h2, #notes h2 {
+  font-size: 24px;
+}
+
+.floatingNotes code, .floatingNotes pre, #nodes code, #nodes pre {
+  font-size: 16px;
+}
+
+.floatingNotes pre.highlight code.language-powershellconsole, .floatingNotes pre.highlight code.powershellconsole,
+.floatingNotes pre.highlight code.language-console, .floatingNotes pre.highlight code.console {
+  font-size: 16px;
+  word-wrap: break-word;
+  overflow-x: scroll;
+} */
+
+
+#presenterPopup {
+  font-weight: 100;
+}
+
+#presenterPopup h1 {
+  font-size: 16px;
+}
+
+#presenterPopup h2 {
+  font-size: 14px;
+}
+
+.callout {
+  font-size: .6em;
+}
+
 #hamburger:hover {
   background-color: #1392FE;
 }
 
+
+/* bullets */
 .bullets > ul > li {
   text-align: left !important;
   padding: 0px !important;
@@ -157,3 +232,36 @@ code {
   list-style: disc !important;
   padding-left: 0px;
 }
+
+/* div.supplemental pre.highlight>code {
+  font-family: 'Inconsolata', monaco, monospace;
+  font-size: 18px;
+  overflow: hidden;
+  display: block;
+  padding: 3px;
+  word-wrap: break-word;
+}
+
+/* Add Console "code highlighting" styles to resemble the look of a terminal window. */
+/* div.supplemental pre.highlight>code.language-console {
+  background: #222;
+  background: url(../../css/titlebar/left.png) left top no-repeat, url(../../css/titlebar/right.png) right top no-repeat, url(../../css/titlebar/center.png) center top repeat-x #222;
+  color: #fff;
+  padding: 30px 0.5em 0.5em;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0px 0px 10px #acacac;
+}
+
+div.supplemental pre.highlight>code.language-powershellconsole {
+  background: rgb(1, 36, 86);
+  background: url(../../css/titlebar/powershell-controls.png) right top no-repeat, url(../../css/titlebar/powershell.png) left top repeat-x rgb(1, 36, 86);
+  color: rgb(238, 237, 240);
+  padding: 32px 0.5em 0.5em;
+  border: 6px solid rgb(102, 202, 234);
+  border-top: 2px solid rgb(102, 202, 234);
+  border-radius: 4px;
+  overflow: hidden;
+}  */
