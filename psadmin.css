@@ -221,7 +221,6 @@ code {
   background-color: #1392FE;
 }
 
-
 /* bullets */
 .bullets > ul > li {
   text-align: left !important;
@@ -230,10 +229,40 @@ code {
 
 .bullets ul {
   list-style: disc !important;
-  padding-left: 0px;
+  padding-left: 0px !important;
 }
 
-/* div.supplemental pre.highlight>code {
+@media print {
+
+  #notes p {
+    font-size: 28px;
+  }
+
+}
+
+img.io {
+  width: 25%;
+}
+
+
+/* ### Supplemental Slides */
+
+div.supplemental {
+  font-size: 18px;
+  height: auto !important;
+  width: auto !important;
+  border-width: 0px;
+}
+
+div.supplemental h1 {
+  font-size: 44px;
+}
+
+div.supplemental code {
+  padding: 2px;
+}
+
+div.supplemental pre.highlight>code {
   font-family: 'Inconsolata', monaco, monospace;
   font-size: 18px;
   overflow: hidden;
@@ -243,7 +272,7 @@ code {
 }
 
 /* Add Console "code highlighting" styles to resemble the look of a terminal window. */
-/* div.supplemental pre.highlight>code.language-console {
+div.supplemental pre.highlight>code.language-console {
   background: #222;
   background: url(../../css/titlebar/left.png) left top no-repeat, url(../../css/titlebar/right.png) right top no-repeat, url(../../css/titlebar/center.png) center top repeat-x #222;
   color: #fff;
@@ -264,4 +293,4 @@ div.supplemental pre.highlight>code.language-powershellconsole {
   border-top: 2px solid rgb(102, 202, 234);
   border-radius: 4px;
   overflow: hidden;
-}  */
+} 
