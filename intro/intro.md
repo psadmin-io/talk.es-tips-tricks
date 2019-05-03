@@ -2,4 +2,4 @@
 
 # psadmin.io Presentation
 
-![.psadminlogo psadmin.io Logo](../_images/psadmin_io_white_400.png)
+![.psadminlogo psadmin.io Logo](../_images/logos/psadmin_io_white_400.png)
