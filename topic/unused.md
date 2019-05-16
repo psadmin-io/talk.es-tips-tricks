@@ -1,5 +1,13 @@
 !SLIDE bullets
 
+# Remove an Elasticsearch Node
+
+~~~SECTION:notes~~~
+`index.routing.allocation.disable_allocation`
+~~~ENDSECTION~~~
+
+!SLIDE bullets
+
 # Kibana Monitoring in ES 6
 
 (http://ec2-34-203-252-37.compute-1.amazonaws.com:5601)

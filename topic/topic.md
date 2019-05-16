@@ -1,7 +1,3 @@
-!SLIDE center subsection blue
-
-# ACM
-
 !SLIDE bullets incremental
 
 # ACM
@@ -308,10 +304,12 @@ Elasticsearch Interact is a quick tool for somethings, but it's very strucutred.
 1. Set to 120 days
 1. Run a full build for that index - notice the date criteria
 
-!SLIDE bullets
+!SLIDE white bullets
 
-# Remove an Elasticsearch Node
+# Community
 
-~~~SECTION:notes~~~
-`index.routing.allocation.disable_allocation`
-~~~ENDSECTION~~~
+* Slack
+* Wiki
+* GitHub
+
+https://psadmin.io
