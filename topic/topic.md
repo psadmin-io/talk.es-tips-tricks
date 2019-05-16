@@ -313,3 +313,11 @@ Elasticsearch Interact is a quick tool for somethings, but it's very strucutred.
 * GitHub
 
 https://psadmin.io
+
+!SLIDE bullets
+
+# Presentation Slides and Guide
+
+https://github.com/psadmin-io/talk.es-tips-tricks
+
+![GitHub Repo](../_images/slides.png)
