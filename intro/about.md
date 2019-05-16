@@ -1,4 +1,4 @@
-!SLIDE bullets
+<!-- !SLIDE bullets
 
 # Kyle Benson
 
@@ -7,7 +7,7 @@
     * Life Cycle Management
     * Fluid Navigation
 * Oracle ACE
-* 10+ years in PeopleSoft
+* 10+ years in PeopleSoft -->
 
 !SLIDE bullets
 

@@ -2,6 +2,11 @@
 
 # Agenda
 
-1. Topic
-1. Topic
-1. Topic
+Demonstrate tips to:
+
+* Simplify Elasticsearch management
+* Monitor Elasticsearch
+* Debug Elasticsearch issues
+* Understand Elasticsearch security
+
+> Not a walk-through on setting up ES
